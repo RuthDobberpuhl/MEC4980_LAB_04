@@ -1,14 +1,3 @@
-// main.cpp
-// Simple demo that reads tilt from a BMI270 accelerometer and
-// displays a minimal indicator on a Qwiic OLED. A button cycles
-// through display modes (Off, Two-axis, X only, Y only, Raw data).
-//
-// Notes:
-// - This version cleans up button handling logic and state toggling.
-// - Long press (>3s) toggles Off ↔ TwoAxis.
-// - Double-tap cycles modes (TwoAxis → XAxis → YAxis → RawData).
-// - OffState is only reachable via long press.
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <stdint.h>
